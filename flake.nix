@@ -38,7 +38,9 @@
             '';
         };
 
-        default = self.packages.${system}.wally-package-types;
+        
       };
+
+      defaultPackage.${system} = self.packages.${system}.wally-package-types;
     };
 }
